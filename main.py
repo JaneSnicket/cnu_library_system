@@ -7,10 +7,9 @@
 #   - 프로그램 번호 입력
 #####################################################
 
-# test github
-
 import sys
 import service.BookService as bookService
+import service.MemberService as memberService
 
 # BookService => 사용 bookService
 while True:
@@ -40,14 +39,14 @@ while True:
 
     if select_num == 1:  # 도서 목록
         bookService.get_books()
-    elif select_num == 2:
+    elif select_num == 2:   # 도서 검색
         bookService.search_books()
     elif select_num == 3:
         pass
     elif select_num == 4:
         pass
-    elif select_num == 5:
-        pass
+    elif select_num == 5:   # 회원 목록
+        memberService.get_members()
     elif select_num == 6:
         pass
     elif select_num == 7:

@@ -41,13 +41,13 @@ while True:
         bookService.get_books()
     elif select_num == 2:   # 도서 검색
         bookService.search_books()
-    elif select_num == 3:
-        pass
+    elif select_num == 3:   # 도서 대출
+        bookService.rental_books()
     elif select_num == 4:
         pass
     elif select_num == 5:   # 회원 목록
         memberService.get_members()
-    elif select_num == 6:
+    elif select_num == 6:   # 회원 검색
         pass
     elif select_num == 7:
         print('Exit Program, Bye Bye :)')
